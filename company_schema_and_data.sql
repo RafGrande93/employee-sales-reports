@@ -28,10 +28,10 @@ INSERT INTO departments (department_name) VALUES
 ('Engineering');
 
 INSERT INTO employees (full_name, department_id, hire_date, base_salary) VALUES
-('Alice Rossi', 1, '2022-01-10', 45000),
-('Marco Bianchi', 1, '2021-05-03', 50000),
-('Luca Verdi', 2, '2020-09-15', 48000),
-('Giulia Neri', 3, '2019-03-20', 60000);
+('Paula Red', 1, '2022-01-10', 45000),
+('Mark Blue', 1, '2021-05-03', 50000),
+('John Green', 2, '2020-09-15', 48000),
+('Julio Black', 3, '2019-03-20', 60000);
 
 INSERT INTO sales (employee_id, sale_amount, sale_date) VALUES
 (1, 1000, '2024-01-10'),
