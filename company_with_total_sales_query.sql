@@ -1,9 +1,6 @@
 -- Schema and sample data
 -- (original file: /mnt/data/company_schema_and_data.sql)
 
--- ============================
--- Original schema & data
--- ============================
 
 -- Employees of a company
 CREATE TABLE employees (
@@ -37,19 +34,6 @@ INSERT INTO sales (employee_id, sale_amount, sale_date) VALUES
 (3, 700,  '2024-02-14'),
 (4, 300,  '2024-02-18');
 
--- ============================
--- Query: total sales per employee
--- ============================
-
-SELECT 
-    e.employee_id, 
-    e.full_name, 
-    SUM(s.sale_amount) AS total_sales
-FROM employees e
-JOIN sales s 
-    ON e.employee_id = s.employee_id
-GROUP BY 
-    e.employee_id, 
     e.full_name
 ORDER BY 
     total_sales DESC;
